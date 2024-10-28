@@ -10,7 +10,7 @@ import {
 } from "./ui/form";
 import { useForm } from "react-hook-form";
 import { Input } from "./ui/input";
-import { loginSchema, loginSchemaType } from "D:/const/constsm/schemas/signIn";
+import { loginSchema, loginSchemaType } from "../../schemas/signIn";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { ImVk } from "react-icons/im";
 import { Link } from "react-router-dom";
