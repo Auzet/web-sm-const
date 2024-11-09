@@ -1,6 +1,4 @@
 import Register from '@/components/Register';
-import '../App.css'
-
 
 function SignUp() {
 
