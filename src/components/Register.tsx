@@ -29,7 +29,7 @@ function Register() {
   }
 
   return (
-    <div className="flex flex-col p-4 w-4/12 justify-center items-stretch border-2 border-accent rounded-xl">
+    <div className="flex flex-col p-4 w-[405px] justify-center items-stretch border-2 border-accent rounded-xl">
       <ImVk className="min-h-14 min-w-14 mx-auto mb-4" />
       <Form {...form}>
         <FormField
@@ -41,8 +41,8 @@ function Register() {
               <FormControl>
                 <Input placeholder="Иван" {...field} />
               </FormControl>
-              <FormDescription />
               <FormMessage />
+              <FormDescription />
             </FormItem>
           )}
         />
@@ -55,8 +55,8 @@ function Register() {
               <FormControl>
                 <Input placeholder="Иванов" {...field} />
               </FormControl>
-              <FormDescription />
               <FormMessage />
+              <FormDescription />
             </FormItem>
           )}
         />
@@ -69,10 +69,10 @@ function Register() {
               <FormControl>
                 <Input placeholder="example@mail.com" {...field} />
               </FormControl>
-              <FormDescription className="">
+              <FormMessage />
+              <FormDescription className="text-xs">
                 Будет использоваться для входа
               </FormDescription>
-              <FormMessage />
             </FormItem>
           )}
         />
@@ -83,24 +83,24 @@ function Register() {
             <FormItem>
               <FormLabel>Введите пароль:</FormLabel>
               <FormControl>
-                <Input placeholder="*" {...field} />
+                <Input type="password" placeholder="*" {...field} />
               </FormControl>
-              <FormDescription />
               <FormMessage />
+              <FormDescription />
             </FormItem>
           )}
         />
         <FormField
           control={form.control}
-          name="password"
+          name="confirmPassword"
           render={({ field }) => (
             <FormItem>
               <FormLabel>Повторите пароль:</FormLabel>
-              <FormControl>
-                <Input placeholder="*" {...field} />
+              <FormControl >
+                <Input type="password" placeholder="*" {...field} />
               </FormControl>
-              <FormDescription />
               <FormMessage />
+              <FormDescription />
             </FormItem>
           )}
         />

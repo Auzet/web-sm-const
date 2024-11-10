@@ -29,7 +29,7 @@ function Login() {
   }
 
   return (
-    <div className="flex flex-col p-4 w-4/12 justify-center items-stretch border-2 border-accent rounded-xl">
+    <div className="flex flex-col p-4 w-[405px] justify-center items-stretch border-2 border-accent rounded-xl">
       <ImVk className="min-h-14 min-w-14 mx-auto mb-4" />
       <Form {...form}>
         <FormField
@@ -53,7 +53,7 @@ function Login() {
             <FormItem>
               <FormLabel>Введите пароль:</FormLabel>
               <FormControl>
-                <Input placeholder="*" {...field} />
+                <Input type="password" placeholder="*" {...field} />
               </FormControl>
               <FormDescription />
               <FormMessage />
